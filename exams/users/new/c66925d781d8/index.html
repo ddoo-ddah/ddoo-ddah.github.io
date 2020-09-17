@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>응시자 추가 - FBEye</title>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+<link rel="stylesheet" href="/stylesheets/style.css">
+<link rel="stylesheet" href="/stylesheets/fonts.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+<link rel="stylesheet" href="/stylesheets/sidebar.css">
+<div id="sidebar-wrapper" class="bg-dark">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+            <a href="/"><img class="px-3" id="logo" src="/images/FBEye-logo-horizontal/vector/default-monochrome-white.svg" alt="FBEye logo"></a>
+        </li>
+        <li><a href="/exams">시험 관리</a></li>
+        <li><a href="/exams/new">시험 추가</a></li>
+        <li><a href="/users/signout">로그아웃</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="mt-3"></div>
+    <h3>응시자 추가</h3>
+    <form method="get">
+        <div class="form-group">
+            <label for="email">응시자 이메일</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="name">응시자 이름</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="access-code">응시자 코드</label>
+            <input type="text" class="form-control" id="access-code" name="access-code" value="631e620c4635" readonly>
+        </div>
+        <p class="text-right">
+            <a href="/exams/users/c66925d781d8" class="btn btn-secondary">↩ 취소</a>
+            <input type="submit" class="btn btn-primary" value="✔ 완료">
+        </p>
+    </form>
+</div>
+    </body>
+</html>

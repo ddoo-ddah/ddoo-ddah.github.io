@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>영어커뮤니케이션 독해/작문 Ⅱ - FBEye</title>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+<link rel="stylesheet" href="/stylesheets/style.css">
+<link rel="stylesheet" href="/stylesheets/fonts.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+<link rel="stylesheet" href="/stylesheets/sidebar.css">
+<div id="sidebar-wrapper" class="bg-dark">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+            <a href="/"><img class="px-3" id="logo" src="/images/FBEye-logo-horizontal/vector/default-monochrome-white.svg" alt="FBEye logo"></a>
+        </li>
+        <li><a href="/exams">시험 관리</a></li>
+        <li><a href="/exams/new">시험 추가</a></li>
+        <li><a href="/users/signout">로그아웃</a></li>
+    </ul>
+</div>
+
+<div class="container clearfix">
+    <div class="mt-3"></div>
+    <h3 class="float-left" style="display: inline;">시험 감독 - 영어커뮤니케이션 독해/작문 Ⅱ</h3>
+    <a href="/exams" class="btn btn-light float-right">↩ 뒤로</a>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <!-- 참여자 목록 -->
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-header">📃 참여자 목록</div>
+                <ul class="list-group list-group-flush" id="user-list">
+                    
+                        <a href="#" class="select-user" id="631e620c4634"><li class="list-group-item list-group-item-danger">👩🏻 권혁우 (1692006@fbeye.xyz)</li></a>
+                    
+                        <a href="#" class="select-user" id="671558dae64d"><li class="list-group-item list-group-item-danger">👩🏻 박찬형 (1692032@fbeye.xyz)</li></a>
+                    
+                        <a href="#" class="select-user" id="dbe62bc9ad84"><li class="list-group-item list-group-item-danger">👩🏻 강보훈 (kbh97102@fbeye.xyz)</li></a>
+                    
+                        <a href="#" class="select-user" id="d95336c4114b"><li class="list-group-item list-group-item-danger">👩🏻 나상혁 (nasang97@fbeye.xyz)</li></a>
+                    
+                        <a href="#" class="select-user" id="30ce39e9469f"><li class="list-group-item list-group-item-danger">👩🏻 윤석진 (sjy@fbeye.xyz)</li></a>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- 메인(참여자 영상) -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">📺 참여자 영상</div>
+                <div class="card-body">
+                    <img src="/images/eye-default.png" id="image-eye" alt="eye image" style="width: 100%;">
+                    <img src="/images/screen-default.png" id="image-screen" alt="screen image" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+        <!-- 채팅 -->
+        <div class="col-md-3">
+            <div class="card mb-3">
+                <div class="card-header" style="background-color: skyblue;">💬 채팅</div>
+                <div>
+                    <div class="card overflow-auto" id="card-chatlog">
+                        <!-- 채팅 로그 카드 -->
+                    </div>
+                    <form id="chat">
+                        <div class="input-group">
+                            <input type="text" name="message" class="form-control" placeholder="메시지 입력" aria-label="메시지 입력" aria-describedby="button-submit">
+                            <div class="input-group-append">
+                                <button class="btn btn-warning" type="submit" id="button-submit">✈ 전송</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 부정행위 로그 -->
+            <div class="card" id="card-cheatinglog">
+                <div class="card-header">👁 부정 행위 로그</div>
+                <div class="card-body overflow-auto" id="cheatinglog">
+                    <!-- 부정행위가 발생할 때마다 p 추가 -->
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/javascripts/supervise.js"></script>
+    </body>
+</html>
