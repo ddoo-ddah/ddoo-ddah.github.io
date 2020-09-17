@@ -1,0 +1,67 @@
+body {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+  
+.container {
+    width: 100%;
+    padding: 20px;
+}
+  
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'S-Core Dream', sans-serif;
+}
+
+.sidebar-nav li {
+    text-indent: 1.5em;
+    line-height: 2.8em;
+}
+  
+.sidebar-nav li a {
+    color: lightgray;
+    display: block;
+    text-decoration: none;
+}
+  
+.sidebar-nav li a:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+}
+  
+.sidebar-nav > .sidebar-brand {
+    font-size: 1.3em;
+    line-height: 3em;
+}
+
+.sidebar-nav > :last-child {
+    margin-top: auto;
+    margin-bottom: 0.5em;
+}
+
+.sidebar-nav > :last-child a {
+    color: indianred;
+}
+
+.sidebar-nav > :last-child a:hover {
+    color: orangered;
+}
+
+#logo {
+    margin: 15px 0px 15px -31px;
+    width: 100%;
+}

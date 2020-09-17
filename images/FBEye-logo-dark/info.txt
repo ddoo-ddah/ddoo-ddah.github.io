@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Nexa_Free_Bold
+font link: https://www.fontfabric.com/nexa-free-font/
+font author: Font Fabric
+font author site: http://www.fontfabric.com/
+
+
+icon designer: Edward Boatman
+icon designer link: /edward
+        
+{"bg-gradient-0":"#410FF8","bg-gradient-1":"#410FF8","icon":"#ffffff","font":"#ffffff","slogan":"#ffffff"}
+      

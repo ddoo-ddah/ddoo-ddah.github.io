@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url('../fonts/S-CoreDream-4Regular.woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url('../fonts/S-CoreDream-6Bold.woff');
+    font-style: normal;
+    font-weight: 600;
+}
