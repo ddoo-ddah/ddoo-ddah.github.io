@@ -10,6 +10,8 @@
  * 시선추적 정확도의 평가는 아직 완료되지 않았습니다.
  * 현재 fbeye.xyz 웹사이트 페이지는 정적 웹페이지로 전환된 상태입니다.
  
+ * * *
+ 
 # [FBEye Android Application](https://github.com/ddoo-ddah/fbeye-mobile_android) 
 
 ## How it works?
