@@ -1,14 +1,17 @@
-# FBEye Android Application
+# FBEye
 
 ## What is FBEye?
  #### Find Bad Eye
  * 시선 추적을 통한 온라인 시험 부정행위 탐지 프로그램 입니다.
  * 추가적으로 서버와의 QR코드 대조를 통해서 실시간 접속 확인을 합니다.
  * 적외선 카메라 등의 특수한 장치 없이 스마트폰으로 시선 추적을 할 수 있습니다.
- * [인증서버](https://github.com/ddoo-ddah/fbeye-processing-server) 및 [관리자용 웹페이지](https://github.com/ddoo-ddah/fbeye-web-server), [수험자용 클라이언트](https://github.com/ddoo-ddah/fbeye-desktop_windows) 와 연동하여 사용할 수 있습니다.
+ * [안드로이드 앱](https://github.com/ddoo-ddah/fbeye-mobile_android), [인증서버](https://github.com/ddoo-ddah/fbeye-processing-server), [관리자용 웹페이지](https://github.com/ddoo-ddah/fbeye-web-server), [수험자용 클라이언트](https://github.com/ddoo-ddah/fbeye-desktop_windows) 와 연동하여 사용할 수 있습니다.
 
  * 시선추적 정확도의 평가는 아직 완료되지 않았습니다.
+ * 현재 fbeye.xyz 웹사이트 페이지는 정적 웹페이지로 전환된 상태입니다.
  
+# [FBEye Android Application](https://github.com/ddoo-ddah/fbeye-mobile_android) 
+
 ## How it works?
 #### Eye LandMark Detection
  1. 이 기능은 [Learning to Find Eye Region Landmarks for Remote Gaze Estimation in Unconstrained Settings](https://ait.ethz.ch/projects/2018/landmarks-gaze/) 을 인용하여 제작되었습니다. 상세 모델 구현은 논문을 참고하시기 바랍니다.
@@ -80,7 +83,7 @@
  
 * * * 
 
-# FBEye Web Server
+# [FBEye Web Server](https://github.com/ddoo-ddah/fbeye-web-server)
 
 ## 실행
 - `npm start`
@@ -142,35 +145,7 @@ FBEye Web Server의 작동 원리에 대해 설명하는 파트입니다.
 
 * * * 
 
-# FBEye Processing Server
-
-## 설치
-1. Node.js 12 or later 설치
-2. `npm install` 명령을 사용하여 의존성 패키지 설치
-
-## 실행
-- `npm start`
-
-## 설정
-- settings.json 파일을 수정하여 설정
-### `net`: 네트워크 설정
-- `key`: TLS에 사용할 개인키
-- `cert`: TLS에 사용할 인증서
-- `desktop.port`: 데스크탑 앱 연결을 위한 포트
-- `mobile.port`: 모바일 앱 연결을 위한 포트
-### `db`: 데이터베이스 설정
-- `uri`: MongoDB 서버 주소
-### `auth`: 사용자 인증 설정
-- `size`: 인증 코드의 길이
-- `interval`: 인증 코드 갱신 주기
-### `crypto`: 암호화 설정
-- `algorithm`: 암호화 알고리즘
-- `length`: 암호화에 사용할 키의 길이
-
-
-* * * 
-
-# FBEye Desktop Application
+# [FBEye Desktop Application](https://github.com/ddoo-ddah/fbeye-desktop_windows)
 ## Features
 ##### QR코드를 통한 실시간 인증
 - [처리 서버](https://github.com/ddoo-ddah/fbeye-processing-server "처리 서버")에서 받아온 QR코드 데이터를 [Zxing](https://github.com/zxing/zxing "Zxing")라이브러리를 이용해서 화면으로 출력합니다. 이는 [모바일 앱](https://github.com/ddoo-ddah/fbeye-mobile_android "모바일 앱")을 통해 인증하는 데 사용됩니다.
@@ -210,3 +185,32 @@ FBEye Web Server의 작동 원리에 대해 설명하는 파트입니다.
 ##### - okhttp
 ##### - okio
 ##### - [FlatSwing](https://github.com/Mommoo/FlatSwing "FlatSwing")
+
+* * *
+
+# [FBEye Processing Server](https://github.com/ddoo-ddah/fbeye-processing-server)
+
+## 설치
+1. Node.js 12 or later 설치
+2. `npm install` 명령을 사용하여 의존성 패키지 설치
+
+## 실행
+- `npm start`
+
+## 설정
+- settings.json 파일을 수정하여 설정
+### `net`: 네트워크 설정
+- `key`: TLS에 사용할 개인키
+- `cert`: TLS에 사용할 인증서
+- `desktop.port`: 데스크탑 앱 연결을 위한 포트
+- `mobile.port`: 모바일 앱 연결을 위한 포트
+### `db`: 데이터베이스 설정
+- `uri`: MongoDB 서버 주소
+### `auth`: 사용자 인증 설정
+- `size`: 인증 코드의 길이
+- `interval`: 인증 코드 갱신 주기
+### `crypto`: 암호화 설정
+- `algorithm`: 암호화 알고리즘
+- `length`: 암호화에 사용할 키의 길이
+
+
